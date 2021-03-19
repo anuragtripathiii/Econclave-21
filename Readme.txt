@@ -1,6 +1,2 @@
-Thanks for downloading this template!
+This was designed and developed by me for an event of E-conclave 2021 which comes under E-cell GLAU mathura
 
-Template Name: TheEvent
-Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/

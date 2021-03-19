@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <script src="assets/js/anurag-js1.js"></script>
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Our Team</title>
+    <link href="assets/css/anurag-style-for-team.css">
+
+    <style>
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .our-team{
+            text-align: center;
+        }
+        .our-team .team-image{
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            border: 5px solid #d7d7d7;
+            position: relative;
+            margin: 0 auto;
+            transition: all 0.5s ease 0s;
+        }
+        .our-team:hover .team-image{
+            border-color: #1fc5b6;
+        }
+        .our-team .team-image img{
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .our-team .social{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+            position: absolute;
+            top: 45%;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.5s ease 0s;
+        }
+        .our-team:hover .social{
+            opacity: 1;
+            transform: scale(1);
+            animation: 0.5s ease 0s normal 1 bounce;
+        }
+        .our-team .social li{
+            display: inline-block;
+            border-radius: 50%;
+        }
+        .our-team .social li:first-child{
+            margin-left: -30px;
+            float: left;
+        }
+        .our-team .social li:last-child{
+            margin-right: -30px;
+            float: right;
+        }
+        .our-team .social li a{
+            display: block;
+            width: 50px;
+            height: 50px;
+            line-height: 47px;
+            border-radius: 50%;
+            background-color: #fff;
+            font-size: 25px;
+            color: #1fc5b6;
+            border: 3px solid #1fc5b6;
+        }
+        .our-team .team-content{
+            padding: 10px 50px;
+        }
+        .our-team .title{
+            font-size: 24px;
+            color: #222;
+            margin: 0 0 10px 0;
+        }
+        .our-team .description{
+            font-size: 14px;
+            color: #555;
+            line-height: 25px;
+            margin: 0;
+        }
+        @keyframes bounce{
+            0%{
+                opacity:0;
+                -webkit-transform:scale(.3);
+                transform:scale(.3)
+            }
+            50%{
+                opacity:1;
+                -webkit-transform:scale(1.05);
+                transform:scale(1.05)
+            }
+            70%{
+                -webkit-transform:scale(.9);
+                transform:scale(.9)
+            }
+            100%{
+                opacity:1;
+                -webkit-transform:scale(1);
+                transform:scale(1)
+            }
+        }
+        @media screen and (max-width: 990px){
+            .our-team{ margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body style="padding-top: 5%">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="team-image">
+                    <img src="assets/team-img/anurag.jpeg">
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-pinterest-p"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, in.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="team-image">
+                    <img src="assets/team-img/anurag.jpeg">
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-pinterest-p"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, in.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="team-image">
+                    <img src="assets/team-img/anurag.jpeg">
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-pinterest-p"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, in.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="team-image">
+                    <img src="assets/team-img/anurag.jpeg">
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-pinterest-p"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, in.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="team-image">
+                    <img src="assets/team-img/anurag.jpeg">
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-pinterest-p"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, in.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="team-image">
+                    <img src="assets/team-img/anurag.jpeg">
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-pinterest-p"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, in.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="team-image">
+                    <img src="assets/team-img/anurag.jpeg">
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-pinterest-p"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, in.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="team-image">
+                    <img src="images/img-1.jpg">
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-pinterest-p"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, in.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="team-image">
+                    <img src="assets/team-img/anurag.jpeg">
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-pinterest-p"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, in.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="team-image">
+                    <img src="assets/team-img/anurag.jpeg">
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-pinterest-p"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Kristiana</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, in.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

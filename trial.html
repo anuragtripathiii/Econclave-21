@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>team</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="LATERAL is a design & technology studio based in San Francisco, CA."/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" >
+
+    <link rel="stylesheet" href="/assets/css/main.min.css?v=9">
+
+    <title>About | Lateral</title>
+
+
+    <!-- End Google Tag Manager -->
+
+    <meta name="twitter:card" content="summary" />
+
+
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<style>
+
+    .our-team{
+        background: #000;
+        text-align: center;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+    }
+    .our-team img{
+        width: 100%;
+        height: auto;
+        transition: all 0.55s ease 0s;
+    }
+    .our-team:hover img{ opacity: 0.5; }
+    .our-team .team-content{
+        padding: 5px 10px 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: rotate(45deg) translate(-50%, -50%);
+        transform-origin: 0 0;
+        transition: all 0.55s ease 0s;
+    }
+    .our-team:hover .team-content{ opacity: 1; }
+    .our-team .team-content:before,
+    .our-team .team-content:after{
+        content: "";
+        width: 400px;
+        height: 2px;
+        background: #95ccea;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        transform: translateX(100%);
+        transition: all 0.55s ease 0s;
+    }
+    .our-team .team-content:after{
+        top: auto;
+        left: auto;
+        bottom: 0;
+        right: 10px;
+        transform: translateX(-100%);
+    }
+    .our-team:hover .team-content:before,
+    .our-team:hover .team-content:after{
+        transform: translate(0, 0);
+        transition-delay: 0.15s;
+    }
+    .our-team .title{
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .our-team .title:before,
+    .our-team .title:after{
+        content: "";
+        width: 2px;
+        height: 300px;
+        background: #95ccea;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        transform: translateY(100%);
+        transition: all 0.55s ease 0s;
+    }
+    .our-team .title:after{
+        top: auto;
+        right: auto;
+        bottom: 10px;
+        left: 0;
+        transform: translateY(-100%);
+    }
+    .our-team:hover .title:before,
+    .our-team:hover .title:after{
+        transform: translate(0, 0);
+    }
+    .our-team .post{
+        display: block;
+        padding: 5px 10px;
+        background: #95ccea;
+        font-size: 17px;
+        font-weight: 700;
+        color: #000;
+        text-transform: capitalize;
+    }
+    @media only screen and (max-width: 990px){
+        .our-team{ margin-bottom: 30px; }
+    }
+</style>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 481797409 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-481797409"></script>
+
+</head>
+<body>
+
+<style media="screen" type="text/css"></style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <img src="assets/img/about-bg.jpg">
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <span class="post">Web Developer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <img src="images/img-2.jpg">
+                <div class="team-content">
+                    <h3 class="title">Kristiana</h3>
+                    <span class="post">Web Designer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+</body>
+</html>

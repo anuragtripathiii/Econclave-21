@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
   <title>E-conclave'21</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/Merriweather.zip.png">
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/Merriweather.zip.png">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -28,6 +30,10 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/anurag-css1.css" rel="stylesheet">
   <link href="assets/css/anurag-css-for-title.css" rel="stylesheet">
+  <link href="assets/css/scrollcss.css" rel="stylesheet">
+  <link href="assets/css/bg-css.css" rel="stylesheet">
+  <link href="assets/css/theme.css" rel="stylesheet">
+  <link href="assets/css/onhover-events.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: TheEvent - v4.0.1
@@ -37,7 +43,43 @@
   ======================================================== -->
 </head>
 
+<script>
+
+  /* -------------------------------------------------------------------------
+   begin Scroll Down Button
+ * ------------------------------------------------------------------------- */
+  (function() {
+    'use strict';
+
+    var btnScrollDown = document.querySelector('#scroll_down');
+
+    function scrollDown() {
+      var windowCoords = document.documentElement.clientHeight;
+      (function scroll() {
+        if (window.pageYOffset < windowCoords) {
+          window.scrollBy(0, 10);
+          setTimeout(scroll, 0);
+        }
+        if (window.pageYOffset > windowCoords) {
+          window.scrollTo(0, windowCoords);
+        }
+      })();
+    }
+
+    btnScrollDown.addEventListener('click', scrollDown);
+  })();
+  /* -------------------------------------------------------------------------
+     end Scroll Down Button
+   * ------------------------------------------------------------------------- */
+</script>
+
 <body>
+<div class="background">
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center ">
@@ -52,7 +94,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#aboutx">About</a></li>
           <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
           <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
           <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
@@ -91,52 +133,114 @@
       <h1 class="mb-4 pb-0"  style="font-family: 'American Typewriter'">E-conclave'21</h1>
         <h5 style="color: aliceblue">Make it happen, Make it matter</h5>
       <p class="mb-4 pb-0">9 - 12 April</p>
-      <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
-      <a href="#about" class="about-btn scrollto">About The Event</a>
+      <div class="wrapper">
+        <!-- begin Scroll Down Button -->
+        <button type="button" class="scroll_down" id="scroll_down"></button>
+        <!-- end Scroll Down Button -->
+      </div>
+      <!-- test -->
+      <div class="spinner scroll-down"> <a class="animate" href="#aboutx"></a> </div>
+<!--      <a href="#about" class="about-btn scrollto">About The Event</a>-->
     </div>
+
+
+
 
   </section><!-- End Hero Section -->
 
+  <div>
+
+  </div>
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2>About The Program</h2>
-            <p>E-Cell GLAU, the Entrepreneurship Cell of GLA University, Mathura, is an organization that upholds the essence of entrepreneurship in youngsters who have the fervour to pursue entrepreneurship and display leadership quality. In 2021, we are spreading awareness about Entrepreneurship in young minds.
+<!--    <section id="about"  style="background:#fb743e;">-->
+<!--      <div class="container" data-aos="fade-up">-->
+<!--        <div class="row">-->
+<!--          <div class="col-lg-6">-->
+<!--            <h2>About The Program</h2>-->
+<!--            <p>E-Cell GLAU, the Entrepreneurship Cell of GLA University, Mathura, is an organization that upholds the essence of entrepreneurship in youngsters who have the fervour to pursue entrepreneurship and display leadership quality. In 2021, we are spreading awareness about Entrepreneurship in young minds.-->
 
-              Our flagship event, E-Conclave, has always been at the pinnacle in cultivating Entrepreneurial culture. It is a culmination of every minds' countless ideas, accelerating innovative startups and multiplying networks. This year we are upping our game, to provide you with the best of action, knowledge and entertainment. At E-Conclave, we aspire to create a miscellany of eminent speakers who have proved themselves to be at the zenith in their respective fields. It is the only cluster of innovative ideas and is becoming a boon for the upcoming generation to show their unique personality and ideas.</p>
-          </div>
-          <div class="col-lg-3">
-            <h3>Where</h3>
-            <p>Please check below each events</p>
-          </div>
-          <div class="col-lg-3">
-            <h3>When</h3>
-            <p>Friday to Sunday<br>9-11 April 2021</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<!--              Our flagship event, E-Conclave, has always been at the pinnacle in cultivating Entrepreneurial culture. It is a culmination of every minds' countless ideas, accelerating innovative startups and multiplying networks. This year we are upping our game, to provide you with the best of action, knowledge and entertainment. At E-Conclave, we aspire to create a miscellany of eminent speakers who have proved themselves to be at the zenith in their respective fields. It is the only cluster of innovative ideas and is becoming a boon for the upcoming generation to show their unique personality and ideas.</p>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3">-->
+<!--            <h3>Where</h3>-->
+<!--            <p>Please check below each events</p>-->
+<!--          </div>-->
+<!--          <div class="col-lg-3">-->
+<!--            <h3>When</h3>-->
+<!--            <p>Friday to Sunday<br>9-11 April 2021</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
 
     <!-- End About Section -->
     <div id="#hell-responsive">
-    <div class="row ">
-          <img  style="margin-right: auto;margin-left: auto;width: 60%;" src="assets/img/theme.jpeg" alt="img" >
-          <h2 style="color: red;text-align: center">E-conclave'21 Theme</h2>
-      </div>
-      <div class="col-md-6">
+<!--    <div class="row ">-->
+<!--          <img  style="margin-right: auto;margin-left: auto;width: 60%;" src="assets/img/theme.jpeg" alt="img" >-->
+<!--          <h2 style="color: red;text-align: center">E-Conclave'21 Theme</h2>-->
+<!--      </div>-->
+
+
 <!--        <div class="mu-about-right">-->
-          <p>
-          </p>
         </div>
       </div>
     </div>
     </div>
+<div>
+<ul class="cards bodyx" id="aboutx">
+  <li>
+    <div href="" class="card">
+      <img src="assets/img/theme.jpeg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+          <div class="card__header-text">
+            <h3 class="card__title">E-Conclave'21</h3>
+<!--            <span class="card__status">1 hour ago</span>-->
+          </div>
+        </div>
+        <p class="card__description">
+
+          It's time to get your adrenaline rushing. Prepare yourself for the three enlightening days as we unveil our biggest annual flagship event: Entrepreneurship-Conclave'21. We're coming even bigger and better with a cluster of exciting competitions, workshops, and a lot more.
+
+          Be a part of this journey and get a chance to grow your network, present your ideas, win amazing prizes, and MAKE IT HAPPEN. So, Mark the dates and gear yourself for this mega opportunity. 😃
+
+          Stay tuned for more. 🌟
 
 
+        </p>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div href="" class="card" style="background: whitesmoke">
+<!--      <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />-->
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+          <div class="card__header-text ">
+            <h2 class="card__title">About the program</h2>
+            <span class="card__status">
+E-Cell GLAU, the Entrepreneurship Cell of GLA University, Mathura, is an organization that upholds the essence of entrepreneurship in youngsters who have the fervour to pursue entrepreneurship and display leadership quality. In 2021, we are spreading awareness about Entrepreneurship in young minds. Our flagship event, E-Conclave, has always been at the pinnacle in cultivating Entrepreneurial culture. It is a culmination of every minds' countless ideas, accelerating innovative startups and multiplying networks. This year we are upping our game, to provide you with the best of action, knowledge and entertainment. At E-Conclave, we aspire to create a miscellany of eminent speakers who have proved themselves to be at the zenith in their respective fields. It is the only cluster of innovative ideas and is becoming a boon for the upcoming generation to show their unique personality and ideas.
+            </span>
+
+          </div>
+        </div>
+        <p class="card__description">
+          The Team<br>
+          E-conclave'21 ❤️
+
+        </p>
+      </div>
+    </div>
+  </li>
+
+</ul>
+</div>
     <br>
 
 
@@ -148,9 +252,9 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="mu-about-right">
+        <div class="mu-about-right  xcx">
           <h2 style="color: red">Opening Eve</h2>
-          <p>
+          <p style="color: black">
             You must not let it go, This night is full of sparkles.
             On the first night of E-Conclave'21, E-Cell GLAU is announcing an Opening Night Ceremony, the efficacy of Revisioning India, which is full of enthusiasm and stability. It is for those who want to meet with the realm stars and deserve an insightful or inspirational story. In the colourful evening, you get felicity from the speakers who rewrite the way of genesis and turned into a thriving and professional life.
           </p>
@@ -163,14 +267,14 @@
 
     <div class="row">
       <div class="col-md-6">
-        <div class="mu-about-left">
+        <div class="mu-about-left ">
           <img class="" src="assets/img/about-bg.jpg" alt="img">
         </div>
       </div>
       <div class="col-md-6">
-        <div class="mu-about-right">
+        <div class="mu-about-right xcx">
           <h2 style="color: red">₹ 50 VENTURE </h2>
-          <p>
+          <p style="color: black">
             Do you have a profitable business idea and the ability to sell it? As a part of E-Conclave, E-Cell is organizing 50 Rupees venture. 50 Rupees venture is an entrepreneurial activity in which students are provided with an opportunity to do business in limited resources. A fare will be organized in which participants can set up different types of stalls, ranging from refreshments, tattoos, Mehandi to engaging games! Participants will be given spaces to set up their stalls for Rs. 50. They will have to come up with their own business ideas, implement them, sell them, earn and get the feel of what it takes to be an ENTREPRENEUR.
           </p>
         </div>
@@ -182,15 +286,21 @@
     <div class="row">
       <div class="col-md-6">
         <div class="mu-about-left">
-          <img class="" src="assets/img/about-bg.jpg" alt="img">
+          <img class="" src="assets/img/ipl.jpeg" alt="img">
         </div>
       </div>
       <div class="col-md-6">
-        <div class="mu-about-right">
+        <div class="mu-about-right xcx">
           <h2 style="color: red">IPL MOCK AUCTION </h2>
-          <p>
-            E-Cell GLAU is back this year with another edition of the much-awaited IPL mock auction. The ultimate chance to prove your managing skills and to seize the hat of a bidder to build the dream team that you always wanted in these intimidating minutes of impulse, approach, probability and gut.  All the teams will be provided with a fixed base virtual amount, which they will use for buying the players. Each player would be having certain points for their batting, bowling and fielding skills. The aim of the teams is to form a team and will be judged on the basis of the final team score and the amount of money left after the auction. PLACE YOUR BIDS!
-          </p>
+          <p style="color: black">
+            Are you a Cricket lover? Well, if the answer is YES, We've got something exciting for you!
+
+            Here's revealing, IPL Mock Auction. It's a shout-out to all the cricket and IPL enthusiasts out there to come, complete, and conquer the auction arena and get a real-time sensation of the IPL auction. Get a chance to create your Dream Team, showcase your skills, and win exciting prizes.
+
+            Get yourself ready for this amazing adventure! <br>
+
+            Date: 10 April 2021 &nbsp;Time: 2 PM onwards<br>
+            Venue: AB-1, Room No. 418          </p>
         </div>
       </div>
     </div>
@@ -204,9 +314,9 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="mu-about-right">
+        <div class="mu-about-right xcx">
           <h2 style="color: red"> Improve Cell </h2>
-          <p>
+          <p style="color: black">
             No description given
           </p>
         </div>
@@ -218,14 +328,23 @@
     <div class="row">
       <div class="col-md-6">
         <div class="mu-about-left">
-          <img class="" src="assets/img/about-bg.jpg" alt="img">
+          <img class="" src="assets/img/bplan1.jpeg" alt="img">
         </div>
       </div>
       <div class="col-md-6">
-        <div class="mu-about-right">
+        <div class="mu-about-right xcx">
           <h2 style="color: red">B-plan</h2>
-          <p>
-            No description provided        </p>
+          <p style="color: black">
+            Do you want to be an Entrepreneur and don't know how to get started?
+
+            We have come up with an amazing opportunity for you to showcase your skills and a platform to get yourself started with entrepreneurship. Put your skates on for a journey and proceed further with us.
+
+            Presenting to you, the B-Plan Competition. Come up with your ideas and pitch in front of the investors, get a chance to win exciting cash prizes, and get yourself started.
+
+            Join us and give wings to your innovative ideas.<br>
+
+            Date & Time: 11 April 2021<br>
+            Venue: IEDC Conference Hall      </p>
         </div>
       </div>
     </div>
@@ -239,9 +358,9 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="mu-about-right">
+        <div class="mu-about-right xcx">
           <h2 style="color: red">Chatbot</h2>
-          <p>
+          <p style="color: black">
             No description provided        </p>
         </div>
       </div>
@@ -256,9 +375,9 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="mu-about-right">
+        <div class="mu-about-right xcx">
           <h2 style="color: red">Pharma Tech</h2>
-          <p>
+          <p style="color: black">
             No description provided        </p>
         </div>
       </div>
@@ -272,9 +391,9 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="mu-about-right">
+        <div class="mu-about-right xcx">
           <h2 style="color: red">Cryptocurrency</h2>
-          <p>
+          <p style="color: black">
             No description provided        </p>
         </div>
       </div>
@@ -288,9 +407,9 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="mu-about-right">
+        <div class="mu-about-right xcx">
           <h2 style="color: red">How to crack an interview ?</h2>
-          <p>
+          <p style="color: black">
             No description provided        </p>
         </div>
       </div>
@@ -441,7 +560,7 @@
               </div>
             </div>
 
-            <div class="row schedule-item">
+            <div class="row schedule-item" style="color: black">
               <div class="col-md-2"><time>12:00 PM</time></div>
               <div class="col-md-10">
                 <div class="speaker">
@@ -452,7 +571,7 @@
               </div>
             </div>
 
-            <div class="row schedule-item">
+            <div class="row schedule-item"  style="color: black">
               <div class="col-md-2"><time>11:00 AM - 12:00PM</time></div>
               <div class="col-md-10">
                 <div class="speaker">
@@ -464,7 +583,7 @@
             </div>
 
 
-            <div class="row schedule-item">
+            <div class="row schedule-item"  style="color: black">
               <div class="col-md-2"><time>02:00PM - 4:00PM</time></div>
               <div class="col-md-10">
                 <div class="speaker">
@@ -476,7 +595,7 @@
             </div>
 
 
-            <div class="row schedule-item">
+            <div class="row schedule-item"  style="color: black">
               <div class="col-md-2"><time>05:00 PM</time></div>
               <div class="col-md-10">
                 <div class="speaker">
@@ -494,7 +613,7 @@
 
           <!-- Schdule Day 2 -->
           <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
-            <div class="row schedule-item">
+            <div class="row schedule-item"  style="color: black">
               <div class="col-md-2"><time>11:00AM - 1:00PM</time></div>
               <div class="col-md-10">
                 <div class="speaker">
@@ -506,7 +625,7 @@
               </div>
             </div>
 
-            <div class="row schedule-item">
+            <div class="row schedule-item"  style="color: black">
               <div class="col-md-2"><time>12:00 PM – 06:00 PM</time></div>
               <div class="col-md-10">
                 <div class="speaker">
@@ -519,7 +638,7 @@
             </div>
 
 
-            <div class="row schedule-item">
+            <div class="row schedule-item"  style="color: black">
               <div class="col-md-2"><time>02:00 PM - 04:00 PM</time></div>
               <div class="col-md-10">
                 <div class="speaker">
@@ -530,7 +649,7 @@
               </div>
             </div>
 
-            <div class="row schedule-item">
+            <div class="row schedule-item"  style="color: black">
               <div class="col-md-2"><time>05:00 PM</time></div>
               <div class="col-md-10">
                 <div class="speaker">
@@ -541,7 +660,7 @@
               </div>
             </div>
 
-            <div class="row schedule-item">
+            <div class="row schedule-item"  style="color: black">
               <div class="col-md-2"><time>4:30 PM - 06:00 PM</time></div>
               <div class="col-md-10">
                 <div class="speaker">
@@ -553,7 +672,7 @@
             </div>
 
 
-            <div class="row schedule-item">
+            <div class="row schedule-item"  style="color: black">
               <div class="col-md-2"><time>06:00 PM – 08:00 PM</time></div>
               <div class="col-md-10">
                 <div class="speaker">
@@ -570,7 +689,7 @@
           <!-- Schdule Day 3 -->
           <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
 
-            <div class="row schedule-item">
+            <div class="row schedule-item"  style="color: black">
 
               <div class="col-md-2"><time>11:00 AM - 02:00 PM</time></div>
               <div class="col-md-10">
@@ -582,7 +701,7 @@
               </div>
             </div>
 
-            <div class="row schedule-item">
+            <div class="row schedule-item"  style="color: black">
               <div class="col-md-2"><time>11:00 AM - 02:00 PM</time></div>
               <div class="col-md-10">
                 <div class="speaker">
@@ -593,7 +712,7 @@
               </div>
             </div>
 
-            <div class="row schedule-item">
+            <div class="row schedule-item"  style="color: black">
               <div class="col-md-2"><time>11:00 AM - 04:00PM</time></div>
               <div class="col-md-10">
                 <div class="speaker">
@@ -622,7 +741,7 @@
 
         <div class="section-header">
           <h2>Event Venue</h2>
-          <p>Event venue location info and gallery</p>
+          <p>Event venue location info </p>
         </div>
 
         <div class="row g-0">
@@ -1265,78 +1384,269 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+<!--  <footer id="footer" style="background:gray;">-->
+<!--    <div class="footer-top">-->
+<!--      <div class="container">-->
+<!--        <div class="row">-->
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <img src="assets/img/Econclave_Logo1%20(1)%2011.png" alt="TheEvenet">
-            <p>E-conclave description</p>
-          </div>
+<!--&lt;!&ndash;          <div class="col-lg-3 col-md-6 footer-info">&ndash;&gt;-->
+<!--&lt;!&ndash;            <img src="assets/img/Econclave_Logo1%20(1)%2011.png" alt="TheEvenet">&ndash;&gt;-->
+<!--&lt;!&ndash;            <p>E-conclave description</p>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
 
-<!--          <div class="col-lg-3 col-md-6 footer-links">-->
-<!--            <h4>Useful Links</h4>-->
-<!--            <ul>-->
-<!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>-->
-<!--              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>-->
-<!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>-->
-<!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>-->
-<!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
-<!--            </ul>-->
+<!--&lt;!&ndash;          <div class="col-lg-3 col-md-6 footer-links">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h4>Useful Links</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;            <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;            </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;          <div class="col-lg-3 col-md-6 footer-links">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h4>Useful Links</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;            <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;            </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+
+<!--          <div class="col-lg-3 col-md-6 footer-contact" style="float: right">-->
+<!--            <h4>Contact Us</h4>-->
+<!--            <p>-->
+<!--              GLA University <br>-->
+<!--              MAthura<br>-->
+<!--              281-406 <br>-->
+<!--              <strong>Phone:</strong> +1 5589 55488 55<br>-->
+<!--              <strong>Email:</strong> info@example.com<br>-->
+<!--            </p>-->
+
+<!--            <div class="social-links">-->
+<!--              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>-->
+<!--              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>-->
+<!--              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>-->
+<!--              <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>-->
+<!--              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
+<!--            </div>-->
+
 <!--          </div>-->
 
-<!--          <div class="col-lg-3 col-md-6 footer-links">-->
-<!--            <h4>Useful Links</h4>-->
-<!--            <ul>-->
-<!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>-->
-<!--              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>-->
-<!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>-->
-<!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>-->
-<!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
-<!--            </ul>-->
-<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
-          <div class="col-lg-3 col-md-6 footer-contact" style="float: right">
-            <h4>Contact Us</h4>
-            <p>
-              GLA University <br>
-              MAthura<br>
-              281-406 <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
+<!--    <div class="container">-->
+<!--      <div class="copyright">-->
+<!--        &copy; Copyright <strong>E-cell, GLAU MAthura</strong>. All Rights Reserved-->
+<!--      </div>-->
+<!--      <div class="credits" style="color: white;text-decoration: none">-->
+<!--        &lt;!&ndash;-->
+<!--        All the links in the footer should remain intact.-->
+<!--        You can delete the links only if you purchased the pro version.-->
+<!--        Licensing information: https://bootstrapmade.com/license/-->
+<!--        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent-->
+<!--      &ndash;&gt;-->
+<!--        Designed & developed by <a href="https://www.instagram.com/anurag.tripathii/"><strong style="color: white" >anurag tripathi</strong></a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </footer>-->
+  <!-- End  Footer -->
+  <footer id="dk-footer" class="dk-footer">
 
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>E-cell, GLAU MAthura</strong>. All Rights Reserved
+      <div class="col-md-1 col-md-2 footer-info">
+        <img src="assets/img/Econclave_Logo1%20(1)%2011.png" alt="TheEvenet">
       </div>
-      <div class="credits" style="color: white;text-decoration: none">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
-      -->
-        Designed & developed by <a href="https://www.instagram.com/anurag.tripathii/"><strong style="color: white" >anurag tripathi</strong></a>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
+      <div class="row">
+        <div class="col-md-12 col-lg-4">
+          <div class="">
+<!--            <a href="index.html" class="footer-logo">-->
+<!--&lt;!&ndash;              <img src="images/footer_logo.png" alt="footer_logo" class="img-fluid">&ndash;&gt;-->
+<!--            </a>-->
+<!--            <p class="footer-info-text">-->
+<!--              Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.-->
+<!--            </p>-->
+<!--            <div class="footer-social-link">-->
+<!--              <h3>Follow us</h3>-->
+<!--              <ul>-->
+<!--                <li>-->
+<!--                  <a href="#">-->
+<!--                    <i class="fa fa-facebook"></i>-->
+<!--                  </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                  <a href="#">-->
+<!--                    <i class="fa fa-twitter"></i>-->
+<!--                  </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                  <a href="#">-->
+<!--                    <i class="fa fa-google-plus"></i>-->
+<!--                  </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                  <a href="#">-->
+<!--                    <i class="fa fa-linkedin"></i>-->
+<!--                  </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                  <a href="#">-->
+<!--                    <i class="fa fa-instagram"></i>-->
+<!--                  </a>-->
+<!--                </li>-->
+<!--              </ul>-->
+<!--            </div>-->
+            <!-- End Social link -->
+          </div>
+          <!-- End Footer info -->
+<!--          <div class="footer-awarad">-->
+<!--            <img src="images/icon/best.png" alt="">-->
+<!--          </div>-->
+        </div>
+        <!-- End Col -->
+        <div class="col-md-12 col-lg-8">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contact-us">
+                <div class="contact-icon">
+                  <i class="fa fa-map-o" aria-hidden="true"></i>
+                </div>
+                <!-- End contact Icon -->
+<!--                <div class="contact-info">-->
+<!--                  <h3 style="display: inline-flex"><i class="far fa-map" style="font-size:40px;color: green"> </i>&nbsp;&nbsp; GLA University Mathura <br> 281406</h3>-->
+<!--                </div>-->
+                <!-- End Contact Info -->
+              </div>
+              <!-- End Contact Us -->
+            </div>
+            <!-- End Col -->
+<!--            <div class="col-md-6">-->
+<!--              <div class="contact-us contact-us-last">-->
+<!--                <div class="contact-icon">-->
+<!--                  <i class="fa fa-volume-control-phone" aria-hidden="true"></i>-->
+<!--                </div>-->
+                <!-- End contact Icon -->
+<!--                <div class="contact-info">-->
+<!--                  <h3>95 711 9 5353</h3>-->
+<!--                  <p>Give us a call</p>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; End Contact Info &ndash;&gt;-->
+<!--              </div>-->
+<!--              &lt;!&ndash; End Contact Us &ndash;&gt;-->
+<!--            </div>-->
+            <!-- End Col -->
+<!--          </div>-->
+          <!-- End Contact Row -->
+<!--          <div class="row" >-->
+<!--            <div class="col-md-12 col-lg-6">-->
+<!--              <div class="footer-widget footer-left-widget">-->
+<!--                <div class="section-heading">-->
+<!--                  <h3>Useful Links</h3>-->
+<!--                  <span class="animate-border border-black"></span>-->
+<!--                </div>-->
+<!--                <ul>-->
+<!--                  <li>-->
+<!--                    <a href="#">About us</a>-->
+<!--                  </li>-->
 
+<!--                  <li>-->
+<!--                    <a href="#">Our Team</a>-->
+<!--                  </li>-->
+<!--                </ul>-->
+<!--                <ul>-->
+<!--                  <li>-->
+<!--                    <a href="#">Contact us</a>-->
+<!--                  </li>-->
+<!--                  <li>-->
+<!--                    <a href="#">Blog</a>-->
+<!--                  </li>-->
+<!--                  <li>-->
+<!--                    <a href="#">Testimonials</a>-->
+<!--                  </li>-->
+<!--&lt;!&ndash;                  <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#">Faq</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                  </li>&ndash;&gt;-->
+<!--                </ul>-->
+<!--              </div>-->
+              <!-- End Footer Widget -->
+            </div>
+            <!-- End col -->
+<!--            <div class="col-md-12 col-lg-6">-->
+<!--              <div class="footer-widget">-->
+<!--                <div class="section-heading">-->
+<!--                  <h3>Subscribe</h3>-->
+<!--                  <span class="animate-border border-black"></span>-->
+<!--                </div>-->
+<!--                <p>&lt;!&ndash; Don’t miss to subscribe to our new feeds, kindly fill the form below. &ndash;&gt;-->
+<!--                  Reference site about Lorem Ipsum, giving information on its origins, as well.</p>-->
+<!--                <form action="#">-->
+<!--                  <div class="form-row">-->
+<!--                    <div class="col dk-footer-form">-->
+<!--                      <input type="email" class="form-control" placeholder="Email Address">-->
+<!--                      <button type="submit">-->
+<!--                        <i class="fa fa-send"></i>-->
+<!--                      </button>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </form>-->
+                <!-- End form -->
+              </div>
+              <!-- End footer widget -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Widget Row -->
+    </div>
+    <!-- End Contact Container -->
+
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <span>Copyright © 2021, All Right Reserved</span>
+          </div>
+          <!-- End Col -->
+          <div class="col-md-6">
+            <div class="copyright-menu">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="#">Terms</a>
+                </li>
+
+                <li>
+                  <a href="con">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End col -->
+        </div>
+        <!-- End Row -->
+      </div>
+      <!-- End Copyright Container -->
+    </div>
+    <!-- End Copyright -->
+    <!-- Back to top -->
+    <div id="back-to-top" class="back-to-top">
+      <button class="btn btn-dark" title="Back to Top" style="display: block;">
+        <i class="fa fa-angle-up"></i>
+      </button>
+    </div>
+    <!-- End Back to top -->
+  </footer>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->

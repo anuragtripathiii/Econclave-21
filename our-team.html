@@ -1,242 +1,271 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>meet our team</title>
+    <link href="assets/css/our-teamcss.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
-    <script src="assets/js/anurag-js1.js"></script>
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-            background-repeat: no-repeat;
-            width: 100%;
-        }
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Merriweather.zip.png">
 
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-        .demo{ background: #e5e5e5; }
-        .our-team{
-            border: 2px solid #ff3232;
-            border-radius: 10px;
-            text-align: center;
-            margin: 10px;
-            z-index: 1;
-            position: relative;
-        }
-        .our-team:before,
-        .our-team:after{
-            content: "";
-            width: 100%;
-            height: 104%;
-            background: #ff3232;
-            position: absolute;
-            top: 50%;
-            left: 0;
-            z-index: -1;
-            transform: translateY(-50%) scaleX(0.3);
-            transition: all 0.3s ease 0s;
-        }
-        .our-team:after{
-            width: 106%;
-            left: 50%;
-            transform: translate(-50%, -50%) scaleY(0.25);
-        }
-        .our-team:hover:before{ transform: translateY(-50%) scaleX(0.7); }
-        .our-team:hover:after{ transform: translate(-50%, -50%) scaleY(0.7); }
-        .our-team img{
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            transition: all 0.3s ease 0s;
-        }
-        .our-team .team-content{
-            width: 93%;
-            padding: 25px 0 10px;
-            background: #ff4444;
-            position: absolute;
-            bottom: 50px;
-            left: 50%;
-            opacity: 0;
-            -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
-            clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
-            transform: translateX(-50%);
-            transition: all 0.3s cubic-bezier(0.5, 0.2,0.1,0.9);
-        }
-        .our-team:hover .team-content{
-            bottom: 10px;
-            opacity: 1;
-        }
-        .our-team .title{
-            font-size: 25px;
-            font-weight: 600;
-            color: #fff;
-            letter-spacing: 1px;
-            text-transform: capitalize;
-            margin: 0;
-        }
-        .our-team .post{
-            display: block;
-            font-size: 16px;
-            color: #fff;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-        .our-team .social{
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-        .our-team .social li{
-            display: inline-block;
-            margin: 0 5px;
-        }
-        .our-team .social li a{
-            display: block;
-            width: 35px;
-            height: 35px;
-            line-height: 35px;
-            border-radius: 50%;
-            background: #fff;
-            font-size: 20px;
-            color: #ff3232;
-            transition: all 0.3s ease 0s;
-        }
-        .our-team .social li a:hover{
-            background: linear-gradient(to bottom,#ff3232, darkred);
-            box-shadow: 0 0 0 5px rgba(255,255,255,0.3);
-            color: #fff;
-        }
-        @media only screen and (max-width: 990px){
-            .our-team{ margin-bottom: 30px; }
-        }
-    </style>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/anurag-css1.css" rel="stylesheet">
+    <link href="assets/css/anurag-css-for-title.css" rel="stylesheet">
+    <link href="assets/css/scrollcss.css" rel="stylesheet">
+    <link href="assets/css/bg-css.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <link href="assets/css/onhover-events.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-                <img src="assets/team-img/anurag.jpeg">
-                <div class="team-content">
-                    <h3 class="title">Williamson</h3>
-                    <span class="post">Web Developer</span>
-                    <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+<!-- Just an image -->
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand" href="index.html">
+        <img src="assets/img/Econclave_Logo1%20(1)%2011.png" width="250" height="70" alt="">
+        <a class="navbar-brand" href="index.html" style="font-size: 20px;color: red" >Home</a>
+
+    </a>
+</nav>
+<!--<nav id="navbar" class="navbar order-last order-lg-0" style="background:#000;">-->
+<!--    <ul>-->
+<!--        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>-->
+<!--        <li><a class="nav-link scrollto" href="#aboutx">About</a></li>-->
+<!--        <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>-->
+<!--        <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>-->
+<!--        <li><a class="nav-link scrollto" href="#venue">Venue</a></li>-->
+<!--        <li><a class="nav-link scrollto" href="our-team.html">Team</a></li>-->
+<!--        &lt;!&ndash;          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>&ndash;&gt;-->
+<!--        <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>-->
+<!--        &lt;!&ndash; <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>-->
+<!--        <ul>-->
+<!--          <li><a href="#">Drop Down 1</a></li>-->
+<!--          <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>-->
+<!--            <ul>-->
+<!--              <li><a href="#">Deep Drop Down 1</a></li>-->
+<!--              <li><a href="#">Deep Drop Down 2</a></li>-->
+<!--              <li><a href="#">Deep Drop Down 3</a></li>-->
+<!--              <li><a href="#">Deep Drop Down 4</a></li>-->
+<!--              <li><a href="#">Deep Drop Down 5</a></li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--          <li><a href="#">Drop Down 2</a></li>-->
+<!--          <li><a href="#">Drop Down 3</a></li>-->
+<!--          <li><a href="#">Drop Down 4</a></li>-->
+<!--        </ul>-->
+<!--      </li> &ndash;&gt;-->
+<!--        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>-->
+<!--    </ul>-->
+<!--    <i class="bi bi-list mobile-nav-toggle"></i>-->
+<!--</nav>-->
+<section class="page-section bg-light" id="team">
+    <div class="container" >
+        <div class="text-center" data-aos="fade-up-right">
+            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+            <h3 class="section-subheading text-muted">E-cell 6.0</h3>
         </div>
+        <div class="row">
 
-
-
-        <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-                <img src="assets/team-img/anurag.jpeg">
-                <div class="team-content">
-                    <h3 class="title">Williamson</h3>
-                    <span class="post">Web Developer</span>
-                    <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    </ul>
+            <div class="col-lg-3" data-aos="fade-up-right">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/Naman.png" alt="Naman Gandhi" />
+                    <h4>Naman Gandhi</h4>
+                    <p class="text-muted">President</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/gandhi_naman_/" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/gandhinaman/" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
+
+            <div class="col-lg-3" data-aos="fade-up-up">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/jaideep.png" alt="Shiv Bhadauria" />
+                    <h4>Jaideep Lalchandi</h4>
+                    <p class="text-muted">Vice-President Media & Publicity</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/shutterspeed_12" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/jai12" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-up">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/deekshav.png" alt="jaideep" />
+                    <h4>Deeksha Valecha</h4>
+                    <p class="text-muted">Vice-President Incubation</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/miss_valecha0111?igshid=nxprdkj6j79t" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/deeksha-valecha-1931b4176" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3" data-aos="fade-up-left">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/shiv.png" alt="Shiv Bhadauria" />
+                    <h4>Shiv Bhadauria</h4>
+                    <p class="text-muted">Head IT & Design</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/__shivbhadouria/" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/shiv-bhadouria-53545017a/" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3" data-aos="fade-up-right">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/anurag.jpg" alt="Anurag Tripathi" />
+                    <h4>Anurag Tripathi</h4>
+                    <p class="text-muted">Associate Head IT & Design</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/anurag.tripathii" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/anurag-tripathi-762263172/" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-up">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/veer2.jpg" alt="Anurag Tripathi" />
+                    <h4>Veer Praksh</h4>
+                    <p class="text-muted">Associate Head IT & Design</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/prakash_veer/" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/veer-prakash-8b3a431b2/" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-up">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/veer2.jpg" alt="Anurag Tripathi" />
+                    <h4>Utkarsh Shukla</h4>
+                    <p class="text-muted">Excutive IT & Design</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/prakash_veer/" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/veer-prakash-8b3a431b2/" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3" data-aos="fade-up-left">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/IMG_20190809_203653_726.jpg" alt="Anurag Tripathi" />
+                    <h4>Varzika</h4>
+                    <p class="text-muted">Head Corporate Relation</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/varzik_a/?hl=en" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/varzikatiwari08/" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-right">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/gaurang.png" alt="Anurag Tripathi" />
+                    <h4>Gaurang</h4>
+                    <p class="text-muted">Associate Head Coporate Relation</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/__.gaurang.__/" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/gaurangk30/" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-up">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/shipra.png" alt="Anurag Tripathi" />
+                    <h4>Shipra Sharma</h4>
+                    <p class="text-muted">Head Media & Publicity</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/shipra-sharma-8b8801150" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-up">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/deeksha2year.png" alt="Anurag Tripathi" />
+                    <h4>Deeksha</h4>
+                    <p class="text-muted">Associate Head Media & Publicity</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-left">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/alok.png" alt="Anurag Tripathi" />
+                    <h4>Alok K. Ojha</h4>
+                    <p class="text-muted">Head Events & Logistics</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-right">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/pawan.png" alt="Anurag Tripathi" />
+                    <h4>pawan Gupta</h4>
+                    <p class="text-muted">Head - Student Relations</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-up">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/bhumika.png" alt="Anurag Tripathi" />
+                    <h4>Bhumika</h4>
+                    <p class="text-muted">Head - Data & Analysis & MIS</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/_bhumi123_?r=nametag" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/bhumika-sharma-835675179" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-up">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/mayank.png" alt="Anurag Tripathi" />
+                    <h4>Mayank</h4>
+                    <p class="text-muted">Head - Talent Search</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/mayank3185?igshid=1vy41rhjdi3og" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="http://www.linkedin.com/in/mayank3185" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-left">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/deeksha2year.png" alt="Anurag Tripathi" />
+                    <h4>Mayank</h4>
+                    <p class="text-muted">Head - Talent Search</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-right"v>
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/shrashti.png" alt="Anurag Tripathi" />
+                    <h4>Srasthi Tyagi</h4>
+                    <p class="text-muted">Head - Investor Relations</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/__tyagii___?igshid=m61086ssnace" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/srashti-tyagi" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-up">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/shivansh.png" alt="Anurag Tripathi" />
+                    <h4>Shivansh Mishra</h4>
+                    <p class="text-muted">Associate Head - Investor Relations</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/your_shivansh?igshid=1szld5m1wb5jb" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/shivansh-mishra" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up-left">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/rudra.png" alt="Anurag Tripathi" />
+                    <h4>Rudra Pratap Singh</h4>
+                    <p class="text-muted">Head - Incubatee Relations</p>
+                    <a class="btn btn-dark btn-social mx-2" href="http://instagram.com/rudra.pratap.rajput/" style="background:white;"><i style="color: pink" class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="http://linkedin.com/in/rudra-pratap-singh-a3a175205" style="background:white;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+
+
+
+
+
         </div>
-
-
-
-        <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-                <img src="assets/team-img/anurag.jpeg">
-                <div class="team-content">
-                    <h3 class="title">Williamson</h3>
-                    <span class="post">Web Developer</span>
-                    <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-                <img src="assets/team-img/anurag.jpeg">
-                <div class="team-content">
-                    <h3 class="title">Williamson</h3>
-                    <span class="post">Web Developer</span>
-                    <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-                <img src="assets/team-img/anurag.jpeg">
-                <div class="team-content">
-                    <h3 class="title">Williamson</h3>
-                    <span class="post">Web Developer</span>
-                    <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-        <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-                <img src="assets/team-img/anurag.jpeg">
-                <div class="team-content">
-                    <h3 class="title">Kristiana</h3>
-                    <span class="post">Web Designer</span>
-                    <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">
+                &copy; E-cell GLAU 2021
         </div>
     </div>
-</div>
+</section>
 </body>
 </html>
